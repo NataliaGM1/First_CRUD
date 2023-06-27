@@ -1,0 +1,36 @@
+.persona-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .persona-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid green;
+    padding: 8px;
+  }
+  
+  .persona-item:last-child {
+    border-bottom: none;
+  }
+  
+  .persona-nombre {
+    font-weight: bold;
+    flex-basis: 50%;
+  }
+  
+  .persona-acciones {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .persona-acciones button {
+    margin-left: 8px;
+  }
+  
+  .persona-form {
+    margin-bottom: 10px;
+  }

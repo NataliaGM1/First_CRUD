@@ -3,7 +3,7 @@ function agregarPersona(nombre, edad) {
     personas.push({ nombre, edad });
     actualizarTabla();
 
-function mostrarPersonas() {
+    function mostrarPersonas() {
         const tablaContainer = document.querySelector('#tablaPersonas');
         tablaContainer.innerHTML = '';    
 
@@ -45,3 +45,27 @@ function mostrarPersonas() {
             tablaContainer.appendChild(fila);
           });
         }    
+
+ 
+        function actualizarPersona(index, nombre, edad) {
+            if (index >= 0 && index < personas.length) {
+              personas[index].nombre = nombre;
+              personas[index].edad = edad;
+              actualizarTabla();
+              console.log('Persona actualizada correctamente.');
+            } else {
+              console.log('Índice inválido.');
+            }
+          }    
+          
+          function eliminarPersona(index) {
+            if (index >= 0 && index < personas.length) {
+              personas.splice(index, 1);
+              actualizarTabla();
+              console.log('Persona eliminada correctamente.');
+            } else {
+              console.log('Índice inválido.');
+            }
+          }
+
+          

@@ -1,3 +1,20 @@
+#edad {
+    margin-right: 20px;
+    border-width: 4px;
+}
+
+#nombre {
+    margin-right: 20px;
+    border-width: 4px;
+}
+
+button {
+    border-width: 4px; 
+}
+
+#tablaPersonas.tabla-container{
+    background-color: antiquewhite;
+}
 .persona-list {
     display: flex;
     flex-direction: column;

@@ -2,7 +2,7 @@ let personas = [];
 function agregarPersona(nombre, edad) {
     personas.push({ nombre, edad });
     actualizarTabla();
-
+}
     function mostrarPersonas() {
         const tablaContainer = document.querySelector('#tablaPersonas');
         tablaContainer.innerHTML = '';    
@@ -68,4 +68,22 @@ function agregarPersona(nombre, edad) {
             }
           }
 
-          
+          function actualizarTabla() {
+            mostrarPersonas();
+          }
+
+          const form = document.querySelector('#formPersona');
+
+
+          form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const nombre = document.querySelector('#nombre').value;
+            const edad = parseInt(document.querySelector('#edad').value);
+            agregarPersona(nombre, edad);
+            form.reset();
+          });
+
+
+          mostrarPersonas();
+       
+    

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>First CRUD</title>
+</head>
+<body>
+    <h1>ToDo List</h1>
+
+    <form id="formPersona">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required>
+  
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" required>
+  
+      <button type="submit">Agregar</button>
+    </form>
+  
+    <div id="tablaPersonas" class="tabla-container">
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>
